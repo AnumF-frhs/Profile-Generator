@@ -1,4 +1,4 @@
-var dropDown = 
+// var =
 
 var boxName = document.getElementById("nameInput");
 console.log(boxName);
