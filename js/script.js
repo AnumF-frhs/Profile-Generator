@@ -15,9 +15,12 @@ console.log(btnCreate);
 var btnProfile = document.getElementById("output");
 console.log(btnProfile);
 
-var favPet = document.getElementById("pet");
+var favPet = document.querySelectorAll("input[type='radio'")
 console.log(favPet);
 
-var hobBy = document.getElementById("hobby");
-console.log(hobBy);
+btnCreate.addEventListener('click', myFunction);
 
+function myFunction (){
+    const nameUser = nameInput.value;
+    btnProfile.innerHTML = 'Name', nameUser + colorInput
+}
