@@ -15,3 +15,9 @@ console.log(btnCreate);
 var btnProfile = document.getElementById("output");
 console.log(btnProfile);
 
+var favPet = document.getElementById("pet");
+console.log(favPet);
+
+var hobBy = document.getElementById("hobby");
+console.log(hobBy);
+
