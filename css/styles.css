@@ -5,7 +5,7 @@ h1 {
   font-style: normal;
 }
  */
- 
+ /*
  @import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
 * {
 	margin: 0;
@@ -13,7 +13,7 @@ h1 {
 }
 
 body {
-	background: #ffc185;
+	background: #a74545;
 }
 
 .container{
@@ -27,6 +27,7 @@ body {
 form {
 	position: absolute;
 	text-align: center;
+ 
 	background: #fff;
 	width: 310px;
 	height: 470px;
@@ -34,9 +35,10 @@ form {
 	padding: 30px 20px 0 20px;
 	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
 	box-sizing: border-box;
+  transform: translateX(100%);
 }
 
-p {
+font {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
@@ -52,14 +54,22 @@ p > span {
 	font-size: 9px;
 }
 
-h3 {
+h1,h2 {
 	font-family: 'Dosis';
 	font-size: 35px;
 	text-transform: uppercase;
-	color: #87613d;
+	color: #000000;
 	margin-bottom: 30px;
 }
 
+h1,h2 {
+ text-align: center;
+}
+
+
+h2 {
+  transform: translateY(-110%);
+}
 input,
 button{
 	outline: none !important; 
@@ -106,7 +116,7 @@ button.form-btn.sx {
 }
 
 button.form-btn.sx:hover {
-	background-color:rgba(255, 125, 0, 0.65);
+	background-color:rgba(7, 7, 7, 0.65);
 	color: #fff;
 }
 

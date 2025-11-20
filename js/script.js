@@ -22,12 +22,12 @@ var hobBy = document.getElementById("hobby");
 
 btnCreate.addEventListener('click', myFunction);
 
-function myFunction (){
+function myFunction () {
  const nameUser = nameInput.value;
  const ageUser = ageInput.value;
  const petUser = favPet.value;
  const hobbyUser = hobBy.value;
- const colorUser = colorInput.options[colorInput.selectedIndex].text;
+ const colorUser = 
+   colorInput.options[colorInput.selectedIndex].text;
  btnProfile.innerHTML = ('Name:', nameUser) +  ('Age:', ageUser) + ('Favorite Color:', colorUser) + ('Pet:', petUser) + ('Hobbies:', hobbyUser);
-
 }
