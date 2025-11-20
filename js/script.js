@@ -15,7 +15,7 @@ console.log(btnCreate);
 var btnProfile = document.getElementById("output");
 console.log(btnProfile);
 
-var favPet = document.querySelectorAll("input")
+var favPet = document.getElementsByClassName("pet")
 console.log(favPet);
 
 var hobBy = document.getElementById("hobby");
