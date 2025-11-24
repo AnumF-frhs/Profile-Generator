@@ -16,7 +16,7 @@ body {
 	background: #a74545;
 }
 
-.container{
+.container {
 	position:absolute;
 	width: auto;
 	height:auto;
@@ -38,7 +38,7 @@ form {
   transform: translateX(100%);
 }
 
-.fav, .pt {
+label {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	text-transform: uppercase;
@@ -47,29 +47,43 @@ form {
 	margin-bottom: 40px;
 }
 
-p > span {
+.fav {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #87613d;
+	margin-bottom: 40px;
+	margin-right: 10px;
+}
+
+.pt {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #87613d;
+	margin-right: 100px;
+}
+
+
+label > span {
 	padding-top: 3px;
 	display: block;
 	font-weight: 400;
 	font-size: 9px;
 }
 
-h1,h2 {
+h1 {
 	font-family: 'Dosis';
 	font-size: 35px;
 	text-transform: uppercase;
 	color: #000000;
 	margin-bottom: 30px;
+	padding-top: 75px;
+	padding-left: 800px;
 }
 
-h1,h2 {
- text-align: center;
-}
-
-
-h2 {
-  transform: translateY(-110%);
-}
 input,
 button{
 	outline: none !important; 
@@ -147,6 +161,32 @@ input {
 	font-weight:100;
 	margin-bottom:25px;
 }
+
+select {
+	border: none;
+	border-bottom: 1px solid #ffc185;
+	width: 30%;
+	font-family: 'Roboto';
+	color: #ff7d00;
+	text-align: center;
+	font-size: 21px;
+	font-weight:100;
+	margin-bottom:25px;
+	margin-left: 20px;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid #ffc185;
+	width: 85%;
+	font-family: 'Roboto';
+	color: #ff7d00;
+	text-align: center;
+	font-size: 21px;
+	font-weight:100;
+	margin-bottom:25px;
+}
+
 
 ::-webkit-input-placeholder {
    color: #ffc185;
