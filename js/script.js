@@ -15,31 +15,34 @@ console.log(butTon);
 var outPut = document.getElementById("output");
 console.log(outPut);
 
-var favPet = document.getElementsByName("pet")
+var favPet = document.getElementsByName("pet");
 console.log(favPet);
 
-var checkBox = document.querySelectorAll('input[type="checkbox"]');
+var checkBoxes = document.querySelectorAll('input[type="checkbox"]');
+console.log(checkBoxes);
 
 butTon.addEventListener('click', myFunction);
 
-function myFunction () {
+function myFunction() {
  const nameUser = nameInput.value;
  const ageUser = ageInput.value;
- let selectedValue = '';
- for(let i = 0; i < favPet.length; i++) {
+ const selectedValue = [];
+ for (let i = 0; i < favPet.length; i++) {
   if (favPet[i].checked) {
-    selectedValue = favPet[i].value;
-    break;
+    selectedValue.push(favPet[i].value);
   }
- }
 
- const checkValues = [];
- checkBox.forEach(checkbox => {
+ 
+
+ const checkedValues = [];
+ checkBoxes.forEach(checkbox => {
   if (checkbox.checked) {
-    checkValues.push(checkbox.value);
+    checkedValues.push(checkbox.value);
   }
  });
-}
+
    const colorUser = colorInput.options[colorInput.selectedIndex].text;
- btnProfile.innerHTML = ('Name:') + (' ') + (nameUser) + ('Age') + (' ')+ (ageUser) + ('Favorite Color:') + (' ') (colorUser) + ('Pet:') + (' ') (selectedValue) + ('Hobbies:') + (' '), (checkValues);
+ outPut.innerHTML = ('Name:') + (' ') + (nameUser) + ('<br>') + ('Age:') + (' ') + (ageUser) + ('<br>') + ('Favorite Pet') + (' ') + (selectedValue) + ('<br>') + ('Hobbies:') + (checkedValues);
+ }
+}
 
